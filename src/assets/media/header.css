@@ -1,0 +1,420 @@
+:root {
+    --color-1: #22443f;
+    --color-2: #81948b;
+    --color-3: #767b35;
+    --color-4: #f5f5f5;
+    --color-5: #fff;
+    --fuente-1: 'rubik iso', cursive;
+    --fuente-2: 'Titillium Web', sans-serif;
+    --weight-font-regular: 400;
+    --weight-font-bold: 700;
+    
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+
+
+}
+
+
+/*header */
+
+.box-header{
+    height: 100vh;
+    padding-top: 2em;
+}
+
+
+
+.box-header-border{
+    margin: auto;  
+    background-color: white;
+    border: 5px solid red;
+    border-radius: 30px;
+    width: 75%;
+    height: 75%;
+    padding-top: 2em;
+    background-image: url("../static/marioHeader.png");
+    background-repeat: no-repeat;
+    background-size: 45% 45%;
+    background-position: 50% 100%;
+}
+
+
+.box-date-name h1{
+    font-family: var(--fuente-1);
+    font-size: 8rem;
+}
+
+.box-date-name h2{
+    font-size: 2rem;
+    font-family: var(--fuente-2);
+}
+
+span.fecha {
+    font-family: var(--fuente-2);
+    font-weight: var(--weight-font-regular);
+    color: var(--color-1);
+    display: table;
+    white-space: nowrap;
+    width: 100%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.scrolldown{
+    margin-top: 3em;
+}
+
+.scrolldown button{
+    background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    margin: auto;
+}
+
+.scrolldown button img{
+    height: 3.5em;
+    width: 3.5em;
+}
+
+
+/* Counter */
+
+.box-counter{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.counter-container{
+    border-radius: 30px;
+    border: 3px solid red;
+    width: 30em;
+    height: 30em;
+    background-color: var(--color-5);
+    font-family: var(--fuente-2);
+}
+
+.rows-casillas{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5.5em;
+}
+
+
+.counter-casilla{
+    border-radius: 5px;
+    border: 1.5px solid red;
+    padding: 1em 0;
+}
+
+.counter-casilla h6{
+    font-size: 0.75em;
+    font-family: var(--fuente-2);
+}
+
+.counter-casilla h5{
+    font-size: 1.6em;
+    font-family: var(--fuente-1);
+}
+
+
+/* Map */
+
+.box-map{
+    margin-top: 3em;
+    text-align: center;
+    font-family: var(--fuente-2);
+}
+
+.box-map button{
+    background: red;
+    color: white;
+    font-size: 1.1em;
+    padding: 0.3em 0.5em;
+}
+
+
+.box-map iframe{
+    height: 20em;
+    width: 20em;
+    
+}
+
+
+.box-map button:hover{
+    border: 1px solid red;
+}
+
+
+
+.box-map{
+    border-radius: 5px;
+    padding: 2em 0;
+    border: 2px solid red;
+    background-color: #fff;
+}
+
+
+
+.box-cards{
+    text-align: center;
+
+}
+
+.box-cards h2{
+    color: black;
+}
+
+.detail{
+    font-family: var(--fuente-1);
+    font-size: 3em;
+}
+
+.box-confirm{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuente-2);
+}
+
+.box-confirm form{
+    margin-top: 4em;
+}
+
+.box-confirm form input{
+    width: 18em;
+    margin: auto;
+    text-align: center;
+    border: 1px solid red
+}
+
+.box-confirm form button{
+    width: 18em;
+    margin: auto;
+    margin-top: 0.5em;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.box-confirm form button:hover{
+    border: 1px solid red;
+}
+
+.box-map .gif {
+    height: 8em;
+    width: 8em;
+    margin-bottom: 3em;
+}
+
+
+.box-footer{
+    background-color: transparent;
+    position: relative;
+    color:  black;
+    bottom: 1em;
+}
+
+.box-footer h3{
+    font-size: 1.3em;
+    text-align: center;
+    font-family: var(--fuente-2);
+}
+
+a{
+    text-decoration: none;
+    color: black;   
+}
+
+
+.box-music{
+    border: 2px solid red;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    height: 4em;
+    width: 4em;
+    background-color: white;
+    z-index: 100;
+}
+
+.box-music:hover{
+    cursor: pointer;
+}
+
+.box-music img{
+    height: 3.4em;
+    width: 3.4em;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+.box-loading{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-45%,-50%);
+}
+
+.box-loading img{
+    height: 10em;
+    width: 10em;
+    padding: 0.5em;
+}
+
+
+.box-ask{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    font-family: var(--fuente-2);
+}
+
+.box-ask  button{
+    width: 45em;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(173, 4, 4);
+    color: white;
+}
+
+.box-ask  button:hover{
+    border: 1px solid rgb(137, 0, 137)
+}
+
+.box-bg {    
+    background: url("../static/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 125% 100%;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;
+}
+
+.box-guess{
+    text-align: center;
+    background: url("../static/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 125% 100%;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;
+}
+
+.container-guess{
+    background-color: white;
+    border: 2px solid  rgb(173, 4, 4);
+    border-radius: 30px;
+    margin: auto;
+    height: 85%;
+    width: 85%;
+    margin-top: 2em;
+    overflow-y: scroll;
+}
+
+.container-guess h1{
+    font-size: 1.5em;
+    font-family: var(--fuente-1);
+}
+
+.container-guess h3{
+    font-size: 1.2em;
+    font-family: var(--fuente-2);
+}
+
+/*media querys*/
+
+
+@media only screen and (max-width:768px) and (min-width:425px) {
+    .box-ask button{
+        width: 7.2em;
+        font-size: 0.6em;
+    }
+
+
+    .box-header h1{
+        font-size: 3em;
+    }
+
+    .box-header h2{
+        font-size: 1.5em;
+    }
+
+    .counter-container{
+        height: 25em;
+        width: 25em;
+    }
+    .rows-casillas{
+        margin-top: 4em;
+    }
+    
+}
+
+
+@media only screen and  (max-width:425px) {
+    .box-ask button{
+        width: 5.5em;
+        font-size: 0.85em;
+    }
+
+
+    .box-header h3{
+        font-size: 1em;
+    }
+
+    .box-header h1{
+        font-size: 4em;
+    }
+
+    .box-header h2{
+        font-size: 1.5em;
+    }
+
+    .counter-container{
+        height: 20em;
+        width: 20em;
+    }
+
+    .counter-container h6{
+        font-size: 0.7em;
+    }
+    .rows-casillas{
+        margin-top: 2em;
+    }
+    
+
+}
+
+
+
+  @media only screen and  (max-width:320px) {
+    
+    .box-date-name h1{
+        font-size: 2.5rem;
+    }
+
+    .box-date-name h2{
+        font-size: 1.2rem;
+    }
+
+  }
